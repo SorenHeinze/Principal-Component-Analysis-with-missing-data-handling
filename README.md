@@ -26,11 +26,11 @@ The program was written in Python 2.7 ... because, reasons.
 - ... However, variables like "colour" should not be encoded e.g. 1 for blue, 2 for green, 3 for orange. This could lead to wrong results, because why should orange have a higher value then blue. In these cases each e.g. colour needs to be it's own variable and if e.g. sample is blue it will get a 1 for the "blue"-variable and a 0 for the other colour-variables. 
 This is basic PCA-stuff, but since it is so important I include this information here.    
 
-An example:
-Sample-name,Temperature,height,green,blue\n
-Sample_5,123.1,456,0,1        <= A blue sample
-Sample_23,123.3,,0,1          <= Missing value here!
-Sample_42,120,15,1,0          <= A green sample
+An example:  
+Sample-name,Temperature,height,green,blue  
+Sample_5,123.1,456,0,1        <= A blue sample  
+Sample_23,123.3,,0,1          <= Missing value here!  
+Sample_42,120,15,1,0          <= A green sample    
 
 The file random_data.txt contains lots of (more or less) random data.
 
