@@ -3,7 +3,7 @@ A program for a very basic PCA that handles missing data correctly.
 
 ## Description
 This software was written in connection with a PhD course about "Multivariate data- and meta-modelling". 
-I wanted to understand the math and principles behind the Principal Component Analysis (PCA) taught there and though: what better way then to write the software myself.
+I wanted to understand the math and principles behind the Principal Component Analysis (PCA) taught there and thought: what better way then to write the software myself.
 
 I will not go into the details what PCA is. The wikipedia article is a good starting point.
 However, in very short: PCA allows to discover underlying patterns (the components) in data that may explain the distribution of the given data in a better way then just the measured variables.
@@ -13,21 +13,21 @@ Many PCA modules exist for python but I couldn't find one that handles missing v
 In addition I wanted to have the possibility to visualize the results in 3D. 
 Hence, I programmed one algorithm to get the components (NIPALs) and some common plotting possibilites for visualization.
 
-The program was written in Python 2.7 because, reasons.
+The program was written in Python 2.7 ... because, reasons.
 
 ## How the data has to look like
--The data needs to be in one file.
+- The data needs to be in one file.
 - The first line of the data needs to contain the names/descriptors of the measured variables.
 - The first column must contain the names/descriptors of each experiment/observation.
-- The separator between the data must be a comma => < , >.
-- Missing data should look like this: < ,, > (so no entry between comma).
+- The separator between the data must be a comma < , >.
+- Missing data should look like this: < ,, > (so no entry between commas).
 - However, all values that can NOT be converted to float will be treated as missing data.
 - Everything needs to be a number! E.g. if a colour is encoded in the data don't use "blue". ... 
-- ... However, variables like "colour" should not be encoded e.g. 1 for blue, 2 for green, 3 for orange. This could lead to wrong results, because why should orange have a higher value then blue. In these cases each e.g. colour needs to be it's own variable and if a e.g. sample is blue it will get a 1 for the "blue"-variable and a 0 for the other colour-variables. 
+- ... However, variables like "colour" should not be encoded e.g. 1 for blue, 2 for green, 3 for orange. This could lead to wrong results, because why should orange have a higher value then blue. In these cases each e.g. colour needs to be it's own variable and if e.g. sample is blue it will get a 1 for the "blue"-variable and a 0 for the other colour-variables. 
 This is basic PCA-stuff, but since it is so important I include this information here.    
 
 An example:
-Sample-name,Temperature,height,green,blue
+Sample-name,Temperature,height,green,blue\n
 Sample_5,123.1,456,0,1        <= A blue sample
 Sample_23,123.3,,0,1          <= Missing value here!
 Sample_42,120,15,1,0          <= A green sample
