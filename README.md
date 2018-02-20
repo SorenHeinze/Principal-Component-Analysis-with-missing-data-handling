@@ -1,5 +1,5 @@
 # Principal-Component-Analysis-with-missing-data-handling
-A program for a very basic PCA that handles missing data correctly
+A program for a very basic PCA that handles missing data correctly.
 
 ## Description
 This software was written in connection with a PhD course about "Multivariate data- and meta-modelling". 
