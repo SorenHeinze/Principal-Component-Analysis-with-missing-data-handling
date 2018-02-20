@@ -49,12 +49,12 @@ Some remarks:
 - Enhancing: If the meaning/influence of one (two, three, etc.) variables is known, these can be enhanced to put (almost) all of it's influence into the very first (second, third, etc.) component. So the remaining components are "cleaner".
 Enhancing sounds fancy, but means just multiplying the data by a (large) factor.
 - The points in the data can be colour coded, if such information was provided in the colourcode.py-file.
-- Probably most intersting are the explained variance, and the score vs. score and loading vs. loading plots. Because these were why I did all the shebang.
-- A plot needs to be closed to be able to plot the next thing. However, running the program twice, thrice, etc. allows to hove two, three, etc. plots at the same time.
+- Probably most interesting are the explained variance, the score vs. score and loading vs. loading plots. Because these are the reasons why I did all the shebang.
+- A plot needs to be closed to be able to plot the next thing. However, running the program twice, thrice, etc. allows to have two, three, etc. plots at the same time.
 - 3D-plotting shows just the scores and loadings (but in 3D ... WHOA!), while in 2D-plotting more stuff (e.g. correlation loadings) can be plotted. 
 - In 3D both graphs can be rotated by clicking on the left graph (and holding) and then dragging the graph around.
 
-Some words of advice: Try to be a friendly user ;)
-I wrote this for personal use, so I do not check at all places if the user-input is correct. So e.g. if characters are used when integers are required the program will stop working and you have to start again.
+Some words of advice: Try to be a friendly user ;)  
+I wrote this for personal use. Hence, I do not check at all places if the user-input is correct. So e.g. if characters are used when integers are required the program will stop working and you have to start again.
 
 Have fun :)
